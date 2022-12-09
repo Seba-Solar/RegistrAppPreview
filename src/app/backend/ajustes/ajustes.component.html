@@ -1,0 +1,33 @@
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-label>Rut Usuario</ion-label>
+      <ion-input [(ngModel)]="data.rut"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label >Edad</ion-label>
+      <ion-input [(ngModel)]="data.age"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Email</ion-label>
+      <ion-input [(ngModel)]="data.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Genero: M o F</ion-label>
+      <ion-input [(ngModel)]="data.gender"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Apellido</ion-label>
+      <ion-input [(ngModel)]="data.lastname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Nombre</ion-label>
+      <ion-input [(ngModel)]="data.name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label>Passowrd</ion-label>
+      <ion-input type="password" [(ngModel)]="data.password"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-button (click)="crearNuevoUsuario()">Boton de testeo</ion-button>
+</ion-content>

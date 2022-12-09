@@ -1,0 +1,16 @@
+<ion-content>
+  <div *ngFor = "let usuario of usuarios">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>{{usuario.rut}}</ion-card-subtitle>
+        <ion-card-title>{{usuario.name}}</ion-card-title>
+        <ion-label>{{usuario.lastname}}</ion-label>
+      </ion-card-header>
+      <ion-card-content>
+        Datos personales:
+        <h4>Edad: {{usuario.age}}</h4>
+        <h4>Correo: {{usuario.email}}</h4>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
