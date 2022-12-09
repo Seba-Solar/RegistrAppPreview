@@ -8,7 +8,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 //Enviroment
 import { environment } from 'src/environments/environment';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './home/home.component';
 import { ResultadoComponent } from './pages/resultado/resultado.component';
 //Firebase
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';

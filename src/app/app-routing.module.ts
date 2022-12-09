@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { AjustesComponent } from './backend/ajustes/ajustes.component';
-import { HomeComponent } from './pages/home/home.component';
+import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { ResultadoComponent } from './pages/resultado/resultado.component';

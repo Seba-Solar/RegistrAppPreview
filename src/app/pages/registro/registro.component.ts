@@ -11,9 +11,7 @@ import { InteractionService } from 'src/app/services/interaction.service';
 })
 
 export class RegistroComponent implements OnInit {
-
-
-  auxUser: Usuario = {
+  data: Usuario = {
     uid: "",
     age:"",
     email:"",
@@ -25,18 +23,17 @@ export class RegistroComponent implements OnInit {
 
   }
 
-  constructor(private auth: AuthService,
-    private firestore: FirestoreService,
-    private interaction: InteractionService,
-    private router: Router) { }
+  constructor(private auth: AuthService,private database: FirestoreService, private interaction: InteractionService) { }
 
   ngOnInit() {}
-
-
-  async registrar(){
-    console.log('datos->', this.auxUser);
-    const respuesta = await this.auth.registrarUser(this.auxUser)
-    
+  crearNuevoUsuario(){
+    const path = 'usuario';
+    const id = this.database.getId();
+    this.data.uid = id;
+    this.database.creatDoc(this.data, path, id).then( ()=>{
+      console.log("Todo guardado");
+      this.interaction.presentToast('Guardado con exito');
+    })
   }
 
 }

@@ -8,30 +8,31 @@
       </ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content>
 
   <ion-item>
     <ion-label>Rut</ion-label>
-    <ion-input [(ngModel)]="auxUser.rut"></ion-input>
+    <ion-input [(ngModel)]="data.rut"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label>Nombre</ion-label>
-    <ion-input [(ngModel)]="auxUser.name"></ion-input>
+    <ion-input [(ngModel)]="data.name"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label>Apellido</ion-label>
-    <ion-input [(ngModel)]="auxUser.lastname"></ion-input>
+    <ion-input [(ngModel)]="data.lastname"></ion-input>
   </ion-item>
 
   <ion-item>
     <ion-label>edad</ion-label>
-    <ion-input type="number" [(ngModel)]="auxUser.age"></ion-input>
+    <ion-input type="number" [(ngModel)]="data.age"></ion-input>
   </ion-item>
   
   <ion-item>
     <ion-label>Genero M o F</ion-label>
-    <ion-input [(ngModel)]="auxUser.gender"></ion-input>
+    <ion-input [(ngModel)]="data.gender"></ion-input>
   </ion-item>
 
   <ion-list>
@@ -39,24 +40,14 @@
       <h2> Credenciales:</h2>
     </ion-title>
     <ion-item class="ion-margin-bottom">
-      <ion-input [(ngModel)]="auxUser.email" type="email" placeholder="Email"></ion-input>
+      <ion-input [(ngModel)]="data.email" type="email" placeholder="Email"></ion-input>
     </ion-item>
     <ion-item class="ion-margin-bottom">
-      <ion-input [(ngModel)]="auxUser.password"  type="password" placeholder="Contraseña"></ion-input>
+      <ion-input [(ngModel)]="data.password"  type="password" placeholder="Contraseña"></ion-input>
     </ion-item>
   </ion-list>
 
-<ion-button (click)="registrar()">
+<ion-button (click)="crearNuevoUsuario()">
   Registrarme
 </ion-button>
-
-<ion-button [routerLink]="['/login']" routerLinkActive="router-link-active" >
-  o login
-</ion-button>
-
-
-
-
-<ion-content>
-
 </ion-content>
