@@ -6,22 +6,19 @@
       <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content>
+  <ion-item>
+    <ion-label>Correo</ion-label>
+    <ion-input [(ngModel)]="credenciales.email"></ion-input>
+  </ion-item>
 
-<ion-item>
-  <ion-label>Correo</ion-label>
-  <ion-input [(ngModel)]="credenciales.email"></ion-input>
-</ion-item>
-
-<ion-item>
-  <ion-label>Contraseña</ion-label>
-  <ion-input  [(ngModel)]="credenciales.password"></ion-input>
-</ion-item>
-
-<ion-button (click)="login()">
-login
-</ion-button>
-
-
-<ion-button [routerLink]="['/registro']" routerLinkActive="router-link-active" >
-o registrate
-</ion-button>
+  <ion-item>
+    <ion-label>Contraseña</ion-label>
+    <ion-input  [(ngModel)]="credenciales.password"></ion-input>
+  </ion-item>
+  <div id="boton">
+    <ion-button  (click)="login()">
+    login
+    </ion-button>
+  </div>
+</ion-content>

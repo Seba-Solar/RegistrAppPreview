@@ -1,1 +1,21 @@
-<p>Home funciona</p>
+<ion-header>
+
+  <ion-toolbar id="toolbar">
+    <ion-menu-button menu="main-menu" slot="start"></ion-menu-button>
+    <ion-title id="titulo">Registr App</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title id="titulo-carta">Bienvenido</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div id="botonera">
+        <ion-button [routerLink]="['/login']">Logearse</ion-button>
+        <ion-button [routerLink]="['/registro']">Registrarse</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

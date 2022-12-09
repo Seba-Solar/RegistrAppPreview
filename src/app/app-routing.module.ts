@@ -9,12 +9,12 @@ import { ResultadoComponent } from './pages/resultado/resultado.component';
 
 const routes: Routes = [
 
-  {path: 'home', component:HomeComponent},
+  {path: 'home', component: HomeComponent},
   {path: 'resultado', component:ResultadoComponent},
   {path: 'ajustes',component:AjustesComponent},
   {path: 'login',component:LoginComponent},
   {path: 'registro',component:RegistroComponent},
-  {path: '',redirectTo: 'home',pathMatch: 'full'},
+  {path: '',redirectTo: 'home',pathMatch: 'full'}
 ];
 
 
